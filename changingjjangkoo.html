@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+
+
+    <style>
+      body{background-color: LavenderBlush;
+      font-family: cursive;}
+      .sen2,.photo,.button,p,h2,.sen1{text-align:center;}
+      .sen2,.button{margin-top:100px;}
+      h2,.sen1,.photo{margin:50px;}
+      a{text-decoration: none; color:black;}
+    </style>
+  </head>
+  <body>
+    <h2><a href="changingjjangkoo.html" title="짱구는 못말려" target="_brank">짱구는 못말려!</a></h2>
+    <div class=sen1>버튼을 누르면 짱구사진이 바뀝니다.</div>
+<!--
+    <script>
+      function light(self){
+        var pic;
+        if(self.value=='off'){
+          pic="jjangkoo.jpg";
+          self.value='on';
+
+        }else{
+          pic="jjangkooandwhite.jpg";
+          self.value='off';
+
+        }
+        document.getElementById('myImage').src=pic;
+    }
+    </script>
+<p style="text-align:center">
+    <img id="myImage" src="jjangkoo.jpg" alt="good" width="180" height="180" >
+    <br>
+    <button id="button" type="button" onclick="light(this)">Light on</button>
+-->
+
+<p class="photo">
+<img id="myImage" src="jjangkoo.jpg" alt="good" width="180" height="180" >
+</p>
+<div class='button'>
+    <input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick="
+    if(document.querySelector('#theButton').value==='노을속 짱구와 흰둥이'){
+    document.querySelector('#myImage').src='jjangkooandwhite.jpg';
+    document.querySelector('#theButton').value='짱구와 흰둥이의 기념사진';
+    document.querySelector('body').style.backgroundColor='AliceBlue';
+    }else{
+
+    document.querySelector('#myImage').src='jjangkoo.jpg';
+    document.querySelector('#theButton').value='노을속 짱구와 흰둥이';
+    document.querySelector('body').style.backgroundColor='LavenderBlush';
+    }
+    ">
+
+
+
+
+
+
+
+</div>
+
+<div class='sen2'>배경색바뀌는건 뽀나쓰</div>
+  </body>
+</html>
