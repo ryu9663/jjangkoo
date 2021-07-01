@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>demo</title>
+  </head>
+  <body>
+    <h1>Changing the Image</h1>
+      <img id="myImage" src="1.jpg" width="100" height="150">
+      <input type="button" onclick="changeImage()" value="Change">
+      <script>
+        function changeImage(){
+          var image=document.getElementById('myImage');
+          if(image.src.match("1.jpg")){
+            image.src="2.jpg";
+          }
+          else{
+            image.src="1.jpg";
+          }
+        }
+
+
+      </script>
+
+
+
+
+
+
+      <!-- <input type="button" value="change" onclick="
+      if(document.querySelector('#myImage').src==='file:///C:/Bitnami/wampstack-8.0.7-0/apache2/htdocs/jjangkoo/1.jpg')
+      {
+        document.querySelector('#myImage').src='2.jpg';
+        }
+      else{
+        document.querySelector('#myImage').src='file:///C:/Bitnami/wampstack-8.0.7-0/apache2/htdocs/jjangkoo/1.jpg';
+      }
+      "> -->
+      </body>
+      </html>
