@@ -6,14 +6,20 @@
 
     <link rel="stylesheet" href="style0.css">
     <style>
-      body{background-color: LavenderBlush;
+      body{background-color: greenyellow;
       font-family: cursive;}
+
       .sen2,.photo,.button,p,h2,.sen1{text-align:center;}
       .sen2,.button{margin-top:50px;}
       .sen2{margin-bottom:100px;}
       h2,.sen1,.photo{margin:50px;}
-      a{text-decoration: none; color:black;}
+      .s{text-decoration: underline;
+      text-align: center;}
 
+
+
+
+}
 
 
 
@@ -25,29 +31,216 @@
 
     <ul id='Content'>
       <div id="grid">
-      <a href="1.html" target="_blank" class="saw">    짱구 가족    </a>
-      <a href="https://blog.naver.com/ryu9663" target="_blank" class="saw" >    짱구 친구들   </a>
-      <a id='kk' href="2.html" target="_blank" class="saw"  id="saw1">    짱구가 좋아하는  </a>
+      <a href="family.html" target="_blank" class="saw">    짱구 가족    </a>
+      <a href="freinds.html" target="_blank" class="saw" >    풀잎 유치원   </a>
+
       </div>
     </ul>
 
 
-<p class="photo">
-<img id="myImage" src="jjangkoo.jpg" alt="good" width="300" height="300" >
-</p>
-<div class='button'>
-    <input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick="
-    if(document.querySelector('#theButton').value==='노을속 짱구와 흰둥이'){
-    document.querySelector('#myImage').src='jjangkooandwhite.jpg';
-    document.querySelector('#theButton').value='짱구와 흰둥이의 기념사진';
-    document.querySelector('body').style.backgroundColor='AliceBlue';
-    }else{
 
-    document.querySelector('#myImage').src='jjangkoo.jpg';
-    document.querySelector('#theButton').value='노을속 짱구와 흰둥이';
-    document.querySelector('body').style.backgroundColor='LavenderBlush';
+
+
+<table style = "border-spacing : 0px; margin-left:auto; margin-right:auto";>
+  <tbody>
+
+  <tr style="height:1px;text-align:center">
+
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>친구</small><br><a class="s" href = "#" onclick="changeImage_1()">철수</a>(35)<br></td>
+
+    <td colspan="2" style="height:1em;width:2em";</td>
+
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>친구</small><br><a class="s" href="#" onclick="changeImage_2()">훈이</a>(29)<br></td>
+    <td colspan="2" style="height:1em;width:2em";</td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>친구</small><br><a class="s" href = "#" onclick="changeImage_3()">맹구</a>(35)<br></td>
+    <td colspan="2" style="height:1em;width:2em";</td>
+
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>친구</small><br><a class="s" href="#" onclick="changeImage_4()">유리</a>(29)<br></td>
+
+
+  </tbody>
+</table>
+
+
+
+
+<table style = " margin-left:auto; margin-right:auto";>
+  <tbody>
+
+
+    <tr>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <!-- <td style="border:1px solid black;height:1em;width:1em"></td>
+    <td style="border:1px solid black;height:1em;width:1em"></td>
+    <td colspan="2" style="height:1em;border:1px solid black;;width:2em"></td>
+    <td style="border:1px solid black;height:1em;width:1em"></td>
+    <td style="height:1em;border:1px solid black;width:1em"></td>
+    <td colspan="2" style="height:1em;border:1px solid black;width:2em"></td>
+    <td colspan="2" style="height:1em;border:1px solid black;width:2em"></td>
+    <td style="height:1em;border:1px solid black;width:1em"></td>
+    <td rowspan="2" style="border:1px solid black;height:2em;width:1em"></td> -->
+    </tr>
+
+    <tr style="border:1px solid black;height:1px;text-align:center">
+      <td colspan="2" style="height:1em;width:1em"></td>
+      <td colspan="2" style="height:1em;width:1em"></td>
+      <td colspan="2" style="height:1em;width:2em"></td>
+      <td colspan="2" style="height:1em;width:2em"></td>
+      <td colspan="2" style="height:1em;width:2em"></td>
+      <td colspan="2" style="height:1em;width:2em"></td>
+      <!-- <td style="border:1px solid black;height:1em;width:1em"></td><br><br> -->
+    </tr>
+
+    <tr>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>유치원</small><br><a class="s" href = "#" onclick="changeImage_5()">원장선생님</a>(??)<br></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>유치원</small></small><br><a class="s" href="#" onclick="changeImage_6()">나미리</a>(20대)<br></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>유치원</small><br><a class="s" href = "#" onclick="changeImage_7()">채성아</a>(20대)<br></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>연예인</small><br><a class="s" href="#" onclick="changeImage_8()">액션가면</a>(??)<br></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+
+    <!-- <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>유치원</small><br><a class="s" href = "#" onclick="changeImage_3()">채성아</a>(20대)<br></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td>
+    <td colspan="6" rowspan="2" style="border:2px solid black;padding:0.2em"><small>유치원</small><br><a class="s" href="#" onclick="changeImage_4()">신짱채성아a>(1)20대br></td>
+    <td colspan="2" rowspan="2" style="height:2em;width:2em"></td> -->
+    </tr>
+    <tr style="height:1px;text-align:center"></tr>
+  </tbody>
+</table>
+
+
+<script>
+  function changeImage_1(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-1.jpg"))
+    {      document.querySelector('body').style.backgroundColor='LightCyan';
     }
-    ">
+    else{
+      image.src="2-1.jpg";
+
+      document.querySelector('body').style.backgroundColor='LightCyan';
+    }
+
+
+  }
+
+  function changeImage_2(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-2.jpg"))
+    {      document.querySelector('body').style.backgroundColor='LightGreen';
+    }
+    else{
+      image.src="2-2.jpg";
+
+      document.querySelector('body').style.backgroundColor='LightGreen';
+    }
+  }
+  function changeImage_3(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-3.jpg"))
+    {      document.querySelector('body').style.backgroundColor='GreenYellow';
+    }
+    else{
+      image.src="2-3.jpg";
+
+      document.querySelector('body').style.backgroundColor='GreenYellow';
+    }
+  }
+  function changeImage_4(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-4.jpg"))
+    {      document.querySelector('body').style.backgroundColor='HoneyDew';
+    }
+    else{
+      image.src="2-4.jpg";
+
+      document.querySelector('body').style.backgroundColor='HoneyDew';
+    }
+  }
+
+
+  function changeImage_5(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-5.jpg"))
+    {      document.querySelector('body').style.backgroundColor='Gold';
+    }
+    else{
+      image.src="2-5.jpg";
+
+      document.querySelector('body').style.backgroundColor='Gold';
+    }
+  }
+
+
+  function changeImage_6(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-6.jpg"))
+    {      document.querySelector('body').style.backgroundColor='LightPink';
+    }
+    else{
+      image.src="2-6.jpg";
+
+      document.querySelector('body').style.backgroundColor='LightPink';
+    }
+  }
+
+
+  function changeImage_7(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-7.jpg"))
+    {      document.querySelector('body').style.backgroundColor='Wheat';
+    }
+    else{
+      image.src="2-7.jpg";
+
+      document.querySelector('body').style.backgroundColor='Wheat';
+    }
+  }
+
+
+  function changeImage_8(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("2-8.jpg"))
+    {      document.querySelector('body').style.backgroundColor='MintCream';
+    }
+    else{
+      image.src="2-8.jpg";
+
+      document.querySelector('body').style.backgroundColor='MintCream';
+    }
+  }
+
+
+</script>
+
+
+
+
+
+<br>
+
+
+<div id="Image" style="text-align:center;">
+  <img id="myImage" src="pulip.jpg" alt="family">
+</div>
 
 
 
@@ -57,10 +250,10 @@
 
 </div>
 
-<div class=sen1>버튼을 누르면 짱구사진이 바뀝니다.</div>
+<div class=sen1>사진을 보고 싶으면 가계도의 이름을 클릭하세요</div>
 
 
-<div class='sen2'>배경색바뀌는건 뽀나쓰</div>
+<!-- <div class='sen2'>배경색바뀌는건 뽀나쓰</div> -->
 <p>
 
 
