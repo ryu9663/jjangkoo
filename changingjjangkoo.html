@@ -4,68 +4,155 @@
     <title></title>
     <meta charset="utf-8">
 
-
+    <link rel="stylesheet" href="style0.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
     <style>
+
       body{background-color: LavenderBlush;
       font-family: cursive;}
       .sen2,.photo,.button,p,h2,.sen1{text-align:center;}
-      .sen2,.button{margin-top:100px;}
+      .sen2,.button{margin-top:50px;}
+      .sen2{margin-bottom:100px;}
       h2,.sen1,.photo{margin:50px;}
       a{text-decoration: none; color:black;}
+
+
+
+
+
     </style>
+
+    <script language="javascript">
+
+        function photoInfo() {
+
+            var img_src;
+
+                if(img_src==='노을속 짱구와 흰둥이.jpg') {
+                img_src = ('짱구와 흰둥이의 기념사진.jpg');
+                }return img_src;
+            }
+
+
+
+</script>
   </head>
   <body>
-    <h2><a href="changingjjangkoo.html" title="짱구는 못말려">짱구는 못말려!</a></h2>
-    <div class=sen1>버튼을 누르면 짱구사진이 바뀝니다.</div>
-<!--
-    <script>
-      function light(self){
-        var pic;
-        if(self.value=='off'){
-          pic="jjangkoo.jpg";
-          self.value='on';
+    <h2><a href="changingjjangkoo.html" title="짱구는 못말려" target="_brank">짱구는 못말려!</a></h2>
 
-        }else{
-          pic="jjangkooandwhite.jpg";
-          self.value='off';
+    <ul id='Content'>
+      <div id="grid">
+        <a href="family.html" target="_blank" class="saw">    짱구 가족    </a>
+        <a href="freinds.html" target="_blank" class="saw" >    풀잎 유치원    </a>
+      </div>
+    </ul>
 
-        }
-        document.getElementById('myImage').src=pic;
-    }
-    </script>
-<p style="text-align:center">
-    <img id="myImage" src="jjangkoo.jpg" alt="good" width="180" height="180" >
-    <br>
-    <button id="button" type="button" onclick="light(this)">Light on</button>
--->
+
+    <div id="img1" src="노을속 짱구와 흰둥이.jpg" alt-"노을">
+
+    </div>
+    <div id="img3" src="짱구와 흰둥이의 기념사진.jpg" alt-"기념사진">
+
+    </div>
+
+
 
 <p class="photo">
-<img id="myImage" src="노을속 짱구와 흰둥이.jpg" alt="good" width="180" height="180" >
-</p>
+<img id="myImage"  alt="good" width="300" height="300" src="a.jpg">
 <div class='button'>
-    <input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick="
-    if(document.querySelector('#theButton').value==='노을속 짱구와 흰둥이'){
-    document.querySelector('#myImage').src='짱구와 흰둥이의 기념사진.jpg';
-    document.querySelector('#theButton').value='짱구와 흰둥이의 기념사진';
-    document.querySelector('body').style.backgroundColor='AliceBlue';
-    }else{
 
-    document.querySelector('#myImage').src='노을속 짱구와 흰둥이.jpg';
-    document.querySelector('#theButton').value='노을속 짱구와 흰둥이';
-    document.querySelector('body').style.backgroundColor='LavenderBlush';
+<input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick="changeImage()">
+<script>
+  function changeImage(){
+    var image=document.querySelector('#myImage');
+    var button=document.querySelector('#theButton');
+    if(image.src.match("a.jpg"))
+    {
+      image.src="b.jpg";
+      button.value='짱구와 흰둥이의 기념사진';
+      document.querySelector('body').style.backgroundColor='AliceBlue';
     }
-    ">
+    else{
+      image.src="a.jpg";
+      button.value='노을속 짱구와 흰둥이';
+      document.querySelector('body').style.backgroundColor='LavenderBlush';
+    }
+  }
+
+
+</script>
 
 
 
 
 
+    </div>
+</p>
 
 
-</div>
+<!-- <input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick=">
+
+if(document.querySelector('#theButton').value==='노을속 짱구와 흰둥이'){
+document.querySelector('#myImage').src='짱구와 흰둥이의 기념사진.jpg';
+document.querySelector('#theButton').value='짱구와 흰둥이의 기념사진';
+document.querySelector('body').style.backgroundColor='AliceBlue';
+}else{
+
+document.querySelector('#myImage').src='노을속 짱구와 흰둥이.jpg';
+document.querySelector('#theButton').value='노을속 짱구와 흰둥이';
+document.querySelector('body').style.backgroundColor='LavenderBlush';
+}
+"> -->
+
+
+
+
+
+<div class=sen1>버튼을 누르면 짱구사진이 바뀝니다.</div>
+
 
 <div class='sen2'>배경색바뀌는건 뽀나쓰</div>
+<p>
+
+
+</p>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jjangkoo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60cee81065b7290ac636e27b/1f99hpq4g';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 
   </body>
+
 </html>
