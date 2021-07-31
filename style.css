@@ -1,0 +1,30 @@
+body{color:black;}
+/*a{text-decoration: none;color:black;}*/
+
+h1{border-bottom: 1px gray solid;margin :0; padding-bottom: 30px;text-align: center;}
+#grid{
+  height:auto;
+  display:grid;
+  grid-template-columns: 200px 1fr;
+}
+
+#grid ol{
+  border-right: 1px solid gray;
+  width:150px; height:1500px;
+  margin:0; padding-top:40px;
+}
+.saw{
+width:auto ;margin:0;}
+
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  #grid ol{
+    text-align: center;
+    border:none; border-bottom:1px gray solid;
+    width:auto; height:auto;
+    margin:none; padding:20px;
+  }
+
+}
