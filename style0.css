@@ -1,10 +1,22 @@
+.hidden{
+  display : none;
+}
+
+
+
+
 body{background-color: LavenderBlush;
 font-family: cursive;}
-.sen2,.photo,.button,p,h2,.sen1{text-align:center;}
+
+/* 가운데정렬 */
+.sen2,.photo,.button,p,h2,.sen1,#time{text-align:center;}
+
 .sen2,.button{margin-top:50px;}
 .sen2{margin-bottom:100px;}
 h2,.sen1,.photo{margin:50px;}
+
 a{text-decoration: none; color:black;}
+
 
 /*h1{text-align: center;}
   #Title{color:deepskyblue;text-decoration: none;font-family: cursive;

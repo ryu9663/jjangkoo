@@ -6,39 +6,12 @@
 
     <link rel="stylesheet" href="style0.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="colors.js"></script>
-    <style>
-
-      body{background-color: LavenderBlush;
-      font-family: cursive;}
-      .sen2,.photo,.button,p,h2,.sen1{text-align:center;}
-      .sen2,.button{margin-top:50px;}
-      .sen2{margin-bottom:100px;}
-      h2,.sen1,.photo{margin:50px;}
-      a{text-decoration: none; color:black;}
-
-
-
-
-
-    </style>
-
-    <script language="javascript">
-
-        function photoInfo() {
-
-            var img_src;
-
-                if(img_src==='노을속 짱구와 흰둥이.jpg') {
-                img_src = ('짱구와 흰둥이의 기념사진.jpg');
-                }return img_src;
-            }
-
-
-
-</script>
+    
+    
+  
   </head>
   <body>
+    
     <h2><a href="changingjjangkoo.html" title="짱구는 못말려" target="_brank">짱구는 못말려!</a></h2>
 
     <ul id='Content'>
@@ -47,63 +20,16 @@
         <a href="freinds.html" target="_blank" class="saw" >    풀잎 유치원    </a>
       </div>
     </ul>
+    <h1 id = 'time'></h1>
+
+    <p class="photo">
+      <img id="myImage"  alt="good" width="300" height="300" src="image/a.jpg">
+      <div class='button'>
+        <button type = 'button' id = 'theButton'></button>
+      </div>
+    </p>
 
 
-    <div id="img1" src="노을속 짱구와 흰둥이.jpg" alt-"노을">
-
-    </div>
-    <div id="img3" src="짱구와 흰둥이의 기념사진.jpg" alt-"기념사진">
-
-    </div>
-
-
-
-<p class="photo">
-<img id="myImage"  alt="good" width="300" height="300" src="a.jpg">
-<div class='button'>
-
-<input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick="changeImage()">
-<script>
-  function changeImage(){
-    var image=document.querySelector('#myImage');
-    var button=document.querySelector('#theButton');
-    if(image.src.match("a.jpg"))
-    {
-      image.src="b.jpg";
-      button.value='짱구와 흰둥이의 기념사진';
-      document.querySelector('body').style.backgroundColor='AliceBlue';
-    }
-    else{
-      image.src="a.jpg";
-      button.value='노을속 짱구와 흰둥이';
-      document.querySelector('body').style.backgroundColor='LavenderBlush';
-    }
-  }
-
-
-</script>
-
-
-
-
-
-    </div>
-</p>
-
-
-<!-- <input id="theButton" type="button" value="노을속 짱구와 흰둥이" onclick=">
-
-if(document.querySelector('#theButton').value==='노을속 짱구와 흰둥이'){
-document.querySelector('#myImage').src='짱구와 흰둥이의 기념사진.jpg';
-document.querySelector('#theButton').value='짱구와 흰둥이의 기념사진';
-document.querySelector('body').style.backgroundColor='AliceBlue';
-}else{
-
-document.querySelector('#myImage').src='노을속 짱구와 흰둥이.jpg';
-document.querySelector('#theButton').value='노을속 짱구와 흰둥이';
-document.querySelector('body').style.backgroundColor='LavenderBlush';
-}
-"> -->
 
 
 
@@ -153,6 +79,10 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
+
+
+<script src = "colors.js"></script>
+<script src = "time.js"></script>
   </body>
 
 </html>

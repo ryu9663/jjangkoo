@@ -1,40 +1,24 @@
-
-  var Body = {
-    setPhoto : function(img){
-      $('#myImage').css('src',img);
-
-      // var target=document.querySelector('body')
-      // target.style.color=color;
-    },
-    setBackColor : function(color){
-      $('body').css('backgroundColor',color);
-
-      // var target=document.querySelector('body')
-      // target.style.backgroundColor=color;
-    },
-    setColor : function(color){
-       // var alist=document.querySelectorAll('a');
-       // var i=0;
-       // while(i<alist.length)
-       // {
-       //   alist[i].style.color=color;
-       //   i++;
-       // }
-      $('a').css('color',color);
-    }
-  };
+const image=document.querySelector('#myImage');
+const button=document.querySelector('#theButton');
 
 
+button.textContent = '버튼을 누르면 사진이 바뀝니다.'
 
-  function changePhoto(self){
-  var target=document.querySelector('#myImage').src;
-  if(self.value==='.sen1'){
-  Body.setPhoto('#img1');
-
-  self.value='.sen2';
+function changeImage(){
+  
+  if(image.src.match("image/a.jpg"))
+  {
+    image.src="image/b.jpg";
+    button.value='짱구와 흰둥이의 기념사진';
+    document.querySelector('body').style.backgroundColor='AliceBlue';
   }
   else{
-  Body.setPhoto('#img2');
-  self.value='.sen1';
-    }
+    image.src="image/a.jpg";
+    button.value='노을속 짱구와 흰둥이';
+    document.querySelector('body').style.backgroundColor='LavenderBlush';
   }
+}
+
+
+button.addEventListener('click',changeImage)
+
