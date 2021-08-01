@@ -1,0 +1,42 @@
+.hidden{
+  display : none;
+}
+
+
+
+
+body{background-color: LavenderBlush;
+font-family: cursive;}
+
+/* 가운데정렬 */
+.sen2,.photo,.button,p,h2,.sen1,#time{text-align:center;}
+
+.sen2,.button{margin-top:50px;}
+.sen2{margin-bottom:100px;}
+h2,.sen1,.photo{margin:50px;}
+
+a{text-decoration: none; color:black;}
+
+
+/*h1{text-align: center;}
+  #Title{color:deepskyblue;text-decoration: none;font-family: cursive;
+  font-size: 40px;}*/
+
+  #Content{/*text-align: center;text-decoration: none;*/
+    padding:0px; padding-bottom : 20px; margin : 0;
+    text-align: center;}
+
+
+    #grid{display:grid;
+        grid-template-columns:1fr 1fr;
+
+        text-decoration: none;}
+        #kk{border-right:0px;}
+
+
+        .saw{
+          border-right :1px gray solid; height:40px;
+           padding-top:20px;font-size: 20px;}
+
+
+#myImage{width :300px; height:300px;}
